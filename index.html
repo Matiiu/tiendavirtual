@@ -1,317 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medipiel</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medipiel</title>
+  <link rel="stylesheet" href="css/nomalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/estilos.css">
+
 </head>
+
 <body>
-    <header>
-      
-  <div class="row bg-primary pt-2  pb">
-    <div class="col-4"></div>
-    <div class="col-4 text-center ">
-      <h5 style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> <i> ENVIOS &nbsp;<span class="border"> GRATIS </span>&nbsp; DESDE 150.000 </i> &nbsp; <a href="http://localhost/tiendasabado/tiendavirtual/tienda.html" style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><i> COMPRAR </i> </h5> 
-    </div>
-     
-    <div class="col-4">
-      <h5></h5>
-    </div>
-  </div>
+  <header>
 
-    </header>
+    <div class=" header">
 
-    <div class="container-fluid border">
-      <nav class="navbar navbar-expand-lg navbar-dark " >
-      <div class="container-fluid">
-        <a class="navbar-brand col-2"  id="medipiel"><img src="img/logo-medipiel.png" height="55" width="120" alt=""></a>   
-        <div class="collapse navbar-collapse col-" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item col-4 ">
-              <a class="link-secondary active flex fs-5 " aria-current="page" href="http://localhost/tiendasabado/tiendavirtual/">Home</a>
-            </li>
-            <li class="nav-item flex col-5">
-              <a class="link-secondary fs-5" href="tienda.html" >Catalogo</a>
-            </li>
-            <li class="nav-item dropdown col-5">
-              <a class="link-secondary dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Marcass
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item ">
-              <a class="link-secondary fs-5 ">Ofertas</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
+      <div class="header__texto">
+        <h1 class=""> ENVIOS
+          &nbsp;<span class="text-inverse header__texto--descuento"> <strong> GRATIS </strong> </span>&nbsp; DESDE
+          150.000 &nbsp; <a href="http://localhost/tiendasabado/tiendavirtual/tienda.html"
+            class="itemHover header__texto--enlace ">
+            COMPRAR
+          </a> </h1>
       </div>
-    </nav>
     </div>
-    
-    <main class="mb-5" >
-      <div id="carouselExampleDark" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <a href="tienda.html" target="_blank"> <img src="img/carrusel1.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">    
-            </a>          
-            </div> 
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <a href="tienda.html" target="_blank"> <img src="img/carrusel2.webp" class="d-block w-100" alt="..."> 
+
+    <!--/Encabazado-->
+    <div class="contenedor border">
+      <div class="barra">
+        <nav class="navegacion">
+          <a href="index.html" class="navegacion__enlaces itemHover"><img src="img/LOGO-AZUL-MEDIPIEL.png " width="150"
+              height="52" alt=""></a>
+
+          <a href="index.html" class="navegacion__enlaces itemHover">Home</a>
+          <a href="tienda.html" class="navegacion__enlaces itemHover">Tienda</a>
+
+          <div class="dropdown navegacion__enlaces ">
+            <a class="  dropdown-toggle navegacion__enlaces itemHover " role="button" id="dropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Marcas
             </a>
-            <div class="carousel-caption d-none d-md-block">             
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="navegacion__enlaces--menu itemHover" href="tienda.html">Avene</a></li>
+              <li><a class="navegacion__enlaces--menu itemHover" href="index.html">Avene</a></li>
+              <li><a class="navegacion__enlaces--menu itemHover" href="#">Avene</a></li>
+            </ul>
+          </div>
+          <!--/dropdown-->
+          <a href="tienda.html" class="navegacion__enlaces itemHover">ofertas</a>
+        </nav>
+        <div class="navegacion__items">
+          <div>
+            <a class="link-secondary active  " aria-current="page" href="#" id="botoncarrito">
+              <i class="bi bi-cart4 navegacion__item   "></i> </a>
+            <span id="capsula"
+              class=" translate-middle badge rounded-pill bg-danger  navegacion__items--conteo invisible">
+              99+
+            </span>
+          </div>
+          <div>
+            <a class="link-secondary active  " aria-current="page" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <i id="formularioRegistro" class="bi bi-person-circle navegacion__item  "></i>
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </header>
+
+
+
+  <section class="slider">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <a href="tienda.html" target="_blank"> <img src="img/carrusel1.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <a href="tienda.html" target="_blank"> <img src="img/carrusel2.webp" class="d-block w-100" alt="...">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <a href="tienda.html" target="_blank"> <img src="img/carrusel3.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+        </a>
+      </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+  </section>
+  <!--/Slider 1 -->
+
+  <main>
+    <div class="container">
+      <div class="tarjeta__row" id="fila">
+
+      </div>
+    </div>
+  </main>
+
+  <section>
+    <div class="modal fade" id="modalinfo" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Medipiel</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-5 mr-5 ">
+                  <img src="" alt="" class="img-fluid w-100 " id="fotoinfo">
+
+                </div>
+                <div class="col-7">
+
+                  <div class="mb-5 ">
+                    <h6 class="text-center mb-3" id="nombreinfo"></h6>
+                    <p class="text-center mb-5" id="descripinfo"> </p>
+                  </div>
+                  <div class="mb-5">
+                    <h3 class="text-center titulo tarjeta__precio" id="precioinfo"> </h3>
+                    <label for="exampleInputPassword1" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" id="cantidadProducto"
+                      oninput="this.value = Math.max(this.value, 1)" min="1" value="1">
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
-          <div class="carousel-item"data-bs-interval="3000">
-            <a href="tienda.html" target="_blank"> <img src="img/carrusel3.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">   
-            </a>     
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+
+            <button id="botonadd" type="button" class="btn btn-success">Agragar al carrito</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> <!-- /Modal -->
+
+  <section>
+    <div class="modal fade" id="resumencarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tienda Virtual</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" id="contenedorventa">
+
             </div>
           </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </main>
-
-    <section class="mt-5 mb-5 " id="info">
-      <div class="contenido container mt-5 ">
-        <div class="row">
-          <div class="col-8 align-self-center">
-            <h4>25% de descuento en nustros productos de la marca VICHY</h4>      
-            <a href="tienda.html"   target="_blank" rel="noopener noreferrer"> <img src="img/img3.jpg" alt="tittlevichy" class=" w-100"  height="200" ></a>    
-              
-                          
-            <button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-              Registrarme  
-            </button>
+          <div class="d-sm-flex">
+            <p class="modal__carrito--total">Total a Pagar:</p>
+            <label id="totalNeto" class=" totalNeto"> </label>
           </div>
-          <div class="col-4">
-           <a href="tienda.html"  target="_blank" rel="noopener noreferrer"> <img src="img/img1.jpg" alt="vichy" class="img-fluid w-100" > </a>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Compar</button>
+            <button id="limpiar" type="button" class="btn btn-danger">Limpiar</button>
           </div>
         </div>
       </div>
-    </section>   
-    
-   
+    </div>
 
-<!--Slider  -->
-<div id="carouselExampleInterval" class="carousel slide mt-5 mb-5 " data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="2000">
-      <img src="img/slider1.webp" class="d-block w-100" height="400" alt="...">
+    <div class="modal fade" id="carritoVacio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tienda Virtual</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" id="">
+              <h1>Carrito Vacio</h1>
+              <img src="img/tiendaVacia.png" alt="">
+
+            </div>
+          </div>
+
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="img/slider2.webp" class="d-block w-100" height="400" alt="...">
+
+  </section> <!-- /Modal del carrito -->
+
+
+
+  <article>
+    <div id="carouselExampleInterval" class="carousel slide mt-5 mb-5 " data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="img/slider1.webp" class="d-block w-100" height="400" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/slider2.webp" class="d-block w-100" height="400" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/title.jpg" class="d-block w-100" height="400" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon rounded" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="img/title.jpg" class="d-block w-100" height="400" alt="...">
+  </article>
+  <!--/Slider 2 -->
+
+  <div class="container-fluid row   text-center  articulosblock">
+    <div class="col-2 ">
+      <a href=""> <img src="img/rd1.png" class="rounded-circle  border border-primary border border-4" height="120px"
+          alt=""> </a>
+      <p class=" mt-2 ">Protector solar</p>
     </div>
+    <div class="col-2">
+      <a href=""> <img src="img/rd2.png" class="rounded-circle  border border-warning border border-4" height="120px"
+          alt=""> </a>
+      <p class=" mt-2 ">Antiedad</p>
+    </div>
+    <div class="col-2 ">
+      <a href=""> <img src="img/rd3.png" class="rounded-circle  border border-danger border border-4" height="120px"
+          alt=""> </a>
+      <p class=" mt-2 ">Hidratantes</p>
+    </div>
+    <div class="col-2">
+      <a href=""> <img src="img/rd4.png" class="rounded-circle  border border-ligth border border-4" height="120px"
+          alt=""> </a>
+      <p class=" mt-2  ">Limpiadores</p>
+    </div>
+    <div class="col-2">
+
+      <a href=""> <img src="img/rd5.png" class="rounded-circle  border border-info border border-4" height="120px"
+          alt=""> </a>
+      <p class=" mt-2 ">Maquillaje</p>
+
+    </div>
+    <div class="col-2">
+
+      <a href=""> <img src="img/rd.webp" class="rounded-circle  border border-dark border border-4" height="120px"
+          alt=""> </a>
+      <p class=" mt-2">Cuidado capilar</p>
+
+    </div>
+
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon rounded" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
- <div class="container-fluid row mt-5 mb-5 p-5">
-   <div class="col-2 text-center">
-    <a href=""> <img src="img/rd1.png" class="rounded-circle  border border-primary border border-4" height="120px" alt=""> </a>
-    <p class="fs-5 mt-2 d-flex mx-auto w-100  ">Protector solar</p>    
-   </div>
-   <div class="col-2">
-    <a href=""> <img src="img/rd2.png" class="rounded-circle  border border-warning border border-4" height="120px" alt=""> </a>
-    <p class="fs-5 mt-2 d-flex mx-auto w-75">Antiedad</p>
-   </div>
-   <div class="col-2">
-    <a href=""> <img src="img/rd3.png" class="rounded-circle  border border-danger border border-4" height="120px" alt=""> </a>
-    <p class="fs-5 mt-2 d-flex mx-auto w-75">Hidratantes</p>
-   </div>
-   <div class="col-2">
-    <a href=""> <img src="img/rd4.png" class="rounded-circle  border border-ligth border border-4" height="120px" alt=""> </a>
-    <p class="fs-5 mt-2 d-flex mx-auto w-75">Limpiadores</p>
-   </div>
-   <div class="col-2">
-     <ul>
-    <a href=""> <img src="img/rd5.png" class="rounded-circle  border border-info border border-4" height="120px" alt=""> </a>
-    <p class="fs-5 mt-2 d-flex mx-auto w-75" >Maquillaje</p>
-  </ul>
-   </div>
-   <div class="col-2">
-     <ul>
-    <a href=""> <img src="img/rd.webp" class="rounded-circle  border border-dark border border-4" height="120px" alt=""> </a>
-    <p class="fs-5 mt-2">Cuidado capilar</p>
-  </ul> 
-  </div>
-   <div class="row">
-
-
-   </div>
-        
-</div> 
-  
-<section class="mb-5 mt-5 p-0 d-flex max-auto w-100 ">
-      <div class=" container mt-5 mb-5 " id="prueba">
-        <div class="bord row" >
-          <div class="borde col-3 mt-3 p-0">
-            <img src="img/img14.webp"  class="w-100 mb-2 " height="330"  alt="">
-            <p class="p-2">Tener una rutina de limpieza  es muy importante, para evitar que se acumule sebo en los poros, aunque es una grasa que protege la piel, en grandes cantidades puede obstruir los poros</p>    
-            <button class="btn btn-info d-flex justify-content-center w-50 mx-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"     
-            aria-controls="offcanvasExample">
-              Registrarme  
-            </button>     
-         </div>
-         
-          <div class="borde col-6 mt-3 p-0 ">
-            <img src="img/img13.webp" class="w-100 mb-2" height="330" alt="">                                 
-            <p class="mb-5 p-2">Evita los productos cosméticos agresivos,
-              Cuidado con el sol y otros factores climatológicos,
-              Minimiza los efectos de la cal y/o el cloro en la piel,
-              Hidrátate también por dentro, come equilibrado y descansa bien,
-              protege las  zonas más sensibles.</p>            
-            <button class="btn btn-info mt-3 d-flex justify-content-center w-50 mx-auto" type="button " data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"   >
-              Registrarme  
-            </button> 
-             
-          </div>
-          <div class="borde col-3 mt-3 p-0 ">
-            <img src="img/img12.jpeg"  height="330" class="w-100 mb-2"  alt="">
-            <p class="p-2">Recuerda que conviene limpiar la piel con productos muy suaves, como aceites desmaquillantes, syndets (detergentes sintéticos) y aguas micelares, y usar tónico sin alcohol</p>
-            <button class="btn btn-info  d-flex justify-content-center w-50 mx-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-              Registrarme  
-            </button>
-            <br><br>
-            
-             
-          </div>
-
+  <section class="container pruebass">
+    <div class="contenidoRegistro">
+      <article class="contenidoPrincipal">
+        <img src="img/img14.webp" alt="">
+        <div class="contenidoPrincipal__texto">
+          <p>ener una rutina de limpieza es muy importante, para evitar que se acumule sebo en los poros,
+            aunque es una grasa que protege la piel, en grandes cantidades puede obstruir los poros</p>
         </div>
+      </article>
+
+      <article class="contenidoPrincipal  ordenar">
+        <img src="img/img13.webp" alt="">
+        <div class="contenidoPrincipal__texto">
+          <p>Evita productos cosméticos agresivos,
+            Cuidado con el sol y otros factores climaticos,
+            Minimiza los efectos de la cal en la piel,
+            Hidrátate también por dentro, come equilibrado y descansa bien,
+            protege las zonas más sensibles.</p>
+        </div>
+        <div class="contenidopincipal__boton">
+          <button class="btn btn-primary contenidoPrincipal__boton--btn " type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            Registrarme
+          </button>
+        </div>
+      </article>
+
+
+      <article class="contenidoPrincipal ">
+        <img src="img/img12.jpeg" alt="">
+        <div class="contenidoPrincipal__texto">
+          <p>Recuerda que conviene limpiar la piel con productos muy suaves, como aceites desmaquillantes,
+            syndets (detergentes sintéticos) y aguas micelares, y usar tónico sin alcohol</p>
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+    </div>
+  </section>
+
+  <section class=" contatainer mt-5 mb-5 " id="info">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header mb-5 formulario__foto ">
+
+
+
+
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-    </section>
+      <h4 class="formulario offcanvas-title" id="offcanvasExampleLabel">Formulario</h4>
+      <div class="offcanvas-body">
 
-    <section class=" contatainer mt-5 mb-5" id="info" >
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header mb-2">
-          <h4 class="formulario offcanvas-title"  id="offcanvasExampleLabel">Formulario</h4>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <h5 class="mb-3">
-           Agrega tus datos para que un asesor contacte contigo
-          </h5>
-          <div class="dropdown  row">           
-                                 
-            <p >Cedula</p>
-            <input type="text" class="mb-3">
-            <p >Nombre</p>
-            <input type="text" class="mb-3">
-            <p >Tlefono</p>
-            <input type="text" class="mb-3">
-            <p >Email</p>
-            <input type="text" class="mb-3">
-            <button class="btn btn-info  mt-3" type="button">
-              Enviar
-            </button>
+        <form id="formularioRegistro" class="formulario__texto">
+          <div class="mb-5">
+            <label for="exampleInputPassword1" class="form-label formulario__texto">Nombre</label>
+            <input type="text" class="form-control" id="name">
           </div>
-        </div>
-      </div>
-     
-    </section>
-  
-    
+          <div class="mb-5">
+            <label for="exampleInputPassword1" class="form-label formulario__texto">Correo</label>
+            <input type="text" class="form-control" id="correo">
+          </div>
 
-  <footer class=" container-fluid bg-primary mt-5  p-2" id="footer" >
-    <section class="conteiner-fluid " >
-      <div class="row">
-       
-      <div class="foot1 col-2 mt-5 mb-5   " >
+          <div class="mb-5">
+            <label for="exampleInputPassword1" class="form-label formulario__texto ">Contraseña</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+
+          <button type="submit" class="btn btn-primary contenidoPrincipal__boton--btn" id="botonRegistro">Registrarse
+          </button>
+        </form>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <footer class="footer">
+
+    <div class="footer__grid">
+      <div class="footer__column foot_col1">
         <ul>
-          <h5 class="mb-4 fw-bold">Domicilios</h5>          
-          <li class="mb-2" > Cartagena:  323 4873279</li>
-          <li class="mb-2"> Manizales: 313 3938046</li>         
-          <li class="mb-2"> Bogotá: 321 6920731</li>
-          <li class="mb-2"> Medellín: 322 2716275</li>
-    </ul>
-
-
+          <h3 class="footer__tittle">Domicilios</h3>
+          <li class="footer__column--items"> Cartagena: 323 4873279</li>
+          <li class="footer__column--items"> Manizales: 313 3938046</li>
+          <li class="footer__column--items"> Bogotá: 321 6920731</li>
+          <li class="footer__column--items"> Medellín: 322 2716275</li>
+        </ul>
       </div>
-      <div class="foot1 col-2 mt-5 mb-5">
+
+
+      <div class="footer__column foot_col2">
         <ul>
-          <h5 class="mb-4 fw-bold">Acerca de medipiel</h5>          
-          <li class="mb-2"> Soy Medipiel</li>
-          <li class="mb-2"> Nuestras tiendas</li>
-          <li class="mb-2"> Blog by Medipiel</li>
-          <h6><a href="https://www.instagram.com/medipiel/"  target="_blank" rel="noopener noreferrer"> <img  src="img/icono.png" width="40" height="40" alt=""> </a>           
-          <a href="https://www.facebook.com/Medipielsa"  target="_blank" rel="noopener noreferrer"> <img  src="img/icono2.png" width="40" height="40" alt=""> 
-          <h6>
+          <h3 class="footer__tittle ">Acerca de medipiel</h3>
+          <li class="footer__column--items"> <a href="https://www.medipiel.com.co/info/soy-medipiel" class="itemHover">
+              Soy Medipiel </a></li>
+          <li class="footer__column--items"> <a href="https://www.medipiel.com.co/tiendas" class="itemHover"> Nuestras
+              tiendas </a></li>
+          <li class="footer__column--items"> <a href="https://blog.medipiel.com.co/" class="itemHover"> Blog by
+              Medipiel </a></li>
+          <li class="footer__column--items"> <a href="https://www.medipiel.com.co/" class="itemHover"> Comunidad </a>
+          </li>
+          <a href="https://www.instagram.com/medipiel/" class="footer__column--items" target="_blank"
+            rel="noopener noreferrer"> <img src="img/icono.png" width="45" height="42" alt=""> </a>
+          &nbsp;
+          <a href="https://www.facebook.com/Medipielsa" class="footer__column--items" target="_blank"
+            rel="noopener noreferrer"> <img src="img/icono2.png" width="45" height="45" alt="">
+
           </a>
         </ul>
       </div>
-      <div class="foot1 col-3 mt-5 mb-5">
+
+      <div class="footer__column foot_col3">
         <ul>
-          <h5 class="fw-bold ">  Servicio al cliente </h5>
-          <br>
-          <li class="mb-2"> servicioalcliente@medipiel.com.co</li>
-          <li class="mb-2"> Preguntas frecuentes</li>
-          <li class="mb-2"> Estatuto de protección al consumidor</li>
-          <li class="mb-2"> Encuesta de satisfacción</li>
-          <li class="mb-2"> Peticiones, Quejas y Reclamos</li>
+          <h3 class="footer__tittle">Servicio al cliente</h3>
+
+          <li class="footer__column--items">servicioalcliente@medipiel.com.co</li>
+          <li class="footer__column--items"> <a href="https://www.medipiel.com.co/info/preguntas-frecuentes"
+              class="itemHover"> Preguntas frecuentes</a></li>
+          <li class="footer__column--items"> <a href="https://www.sic.gov.co/estatutos-consumidor" class="itemHover">
+              Estatuto de protección al consumidor</a></li>
+          <li class="footer__column--items"> <a href="https://www.medipiel.com.co/especiales/experiencia-ecommerce"
+              class="itemHover">Encuesta de satisfacción </a> </li>
+          <li class="footer__column--items"> <a href="https://lp.medipiel.com.co/buzon-de-sugerencias"
+              class="itemHover"> Peticiones, Quejas y Reclamos</a></li>
         </ul>
       </div>
-      <div class="foot1 col-3 mt-5 mb-5 " >
-        <ul>
-          <h5> <b> Links de interes </b></h5>
-          <br>
-          <li class="mb-2"><a href="https://www.medipiel.com.co/info/terminos-y-condiciones"  
-          class="link-light" target="_blank" > Términos y condiciones </a> </li>
-          <li class="mb-2"> <a href="https://www.medipiel.com.co/info/cambios-y-devoluciones" class="link-light" target="_blank"> Política de devoluciones </a></li>
-          <li class="mb-2"> <a href="https://www.medipiel.com.co/especiales/registro-dermatologos" class="link-light" target="_blank">Directorio de especialistas </a> </li>
-          <li class="mb-2"> <a href="https://www.medipiel.com.co/info/medicamentos" class="link-light" target="_blank"> Como usar tus medicamentos </a></li>
-        </ul >
-      </div>
-      <div class="icons col-2 mt-3">
-       
+
+      <div class="footer__column foot_col4">
+        <ul class="no-padding">
+          <h3 class="footer__tittle">Links de interes</h3>
+          <li class="footer__column--items"><a href="https://www.medipiel.com.co/info/terminos-y-condiciones"
+              class="itemHover"> Términos y condiciones </a> </li>
+          <li class="footer__column--items"> <a href="https://www.medipiel.com.co/info/cambios-y-devoluciones"
+              class="itemHover">Política de devoluciones </a> </li>
+          <li class="footer__column--items"> <a href="https://www.medipiel.com.co/especiales/registro-dermatologos "
+              class="itemHover"> Directorio de especialistas </a></li>
+          <li class="footer__column--items"> <a href="https://www.medipiel.com.co/info/medicamentos" class="itemHover">
+              Uso de tus medicamentos </a></li>
+        </ul>
       </div>
     </div>
-    
-    </section>
-  </div>
-
-
-
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
-  <script src="tienda.html"></script>
+  <section>
+    <div class="modal fade" id="modalInformativo" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">MediPiel</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="infoGeneral"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Modal Login-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="js/controlador.js" type="module"></script>
+  <script src="js/firebase.js" type="module"> </script>
+  <script src="js/registro.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>
