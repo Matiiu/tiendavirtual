@@ -10,7 +10,9 @@ pintarTienda();
 
 //Hacer la variable global:
 let modalinfo;
-
+let totalUSD;
+let totUSD;
+let totalNeto;
 //Llamando al modulo ampliar info
 let contendorTienda = document.getElementById("fila");
 contendorTienda.addEventListener("click", function (event) {
@@ -52,17 +54,28 @@ boton.addEventListener("click", function (event) {
   //4-Calculo la sumatoria de cantidad
   let suma = 0;
   let sumaPrecio = 0;
-
+ let usd=0.00024;
+  
   carrito.forEach(function (producto) {
     suma = suma + Number(producto.cantidad);
     sumaPrecio = sumaPrecio + Number(producto.subtotal);
+    totUSD = sumaPrecio * usd;
   });
-  let totalNeto = document.getElementById("totalNeto");
+   totalNeto = document.getElementById("totalNeto");
   totalNeto.innerHTML = sumaPrecio;
+  
+
   pintarcarrito(suma);
   modalinfo.hide();
-});
 
+});
+//convertir a usd
+let convertir=document.getElementById("convertir");
+convertir.addEventListener("click",function(event){
+  totalUSD=document.getElementById("totalUSD");
+  totalUSD.innerHTML = totUSD;
+  totalNeto.innerHTML=""
+})
   //Limpiar carrito
   
   let limpiarcarro = document.getElementById("limpiar");
@@ -76,8 +89,11 @@ boton.addEventListener("click", function (event) {
     //borrar contenido html de una sección
     contenedor.innerHTML = "";
     totalNeto.innerHTML = "";   
+    totalUSD.innerHTML ="";
     
   });
+
+
 
 //ver resumen de venta
 let botoncarrito = document.getElementById("botoncarrito");
